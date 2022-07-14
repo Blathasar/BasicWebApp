@@ -30,4 +30,12 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void isBiggestNumber() {
+		String actual = queryProcessor.process("which of the following numbers is the largest: 12, 15, 18");
+		if (!actual.contains("playwright")) {
+			fail("Your QueryProcessor should not be case sensitive.");
+		}
+	}
+
 }

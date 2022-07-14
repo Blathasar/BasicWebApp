@@ -16,7 +16,7 @@ public class QueryProcessor {
             String[] stringNumbers = substring.split(" ");
             int[] numbers = new int[stringNumbers.length];
             for (int i = 0; i < numbers.length; i++) {
-                numbers[i] = Integer.getInteger(String.valueOf(numbers[i]));
+                numbers[i] = Integer.getInteger(stringNumbers[i].substring(1));
             }
             int largestNumber = numbers[0];
             for (int i = 0; i < numbers.length; i++) {
