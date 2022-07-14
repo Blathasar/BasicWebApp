@@ -14,7 +14,7 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
            return "MyTeam";
         } else {
-            return "that is not the name we are looking for";
+            return "Elias";
         }
     }
 }
